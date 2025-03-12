@@ -13,6 +13,14 @@
     <main>
         <section id="command-builder">
             <form id="commandForm">
+                <label for="templateSelect">Choose a Template:</label>
+                <select id="templateSelect">
+                    <option value="">Select a template</option>
+                    <option value="greet">Greet Command</option>
+                    <option value="ban">Ban Command</option>
+                    <option value="kick">Kick Command</option>
+                </select>
+
                 <label for="commandName">Command Name:</label>
                 <input type="text" id="commandName" placeholder="Enter command name">
 
@@ -34,4 +42,11 @@
                 <button type="button" id="addParamBtn">Add Parameter</button>
                 <button type="button" id="saveCommandBtn">Save Command</button>
             </form>
-        </
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Dinosaurs. All rights reserved.</p>
+    </footer>
+    <script src="slash-command-builder.js"></script>
+</body>
+</html>
