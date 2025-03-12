@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slash Command Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Slash Command Builder</h1>
+    </header>
+    <main>
+        <section id="command-builder">
+            <form id="commandForm">
+                <label for="commandName">Command Name:</label>
+                <input type="text" id="commandName" placeholder="Enter command name">
+
+                <label for="commandDescription">Description:</label>
+                <input type="text" id="commandDescription" placeholder="Enter command description">
+
+                <div id="parameters">
+                    <h3>Parameters</h3>
+                    <div class="parameter">
+                        <input type="text" class="paramName" placeholder="Parameter name">
+                        <select class="paramType">
+                            <option value="string">String</option>
+                            <option value="integer">Integer</option>
+                            <option value="boolean">Boolean</option>
+                        </select>
+                        <button type="button" class="removeParamBtn">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="addParamBtn">Add Parameter</button>
+                <button type="button" id="saveCommandBtn">Save Command</button>
+            </form>
+        </
